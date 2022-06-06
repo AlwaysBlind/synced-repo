@@ -1,0 +1,10 @@
+on: [push]
+
+jobs:
+  test_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: gh-test-action
+        uses: alwaysblind/gh-action-test
+        with:
+          who-to-greet: "Dogson"
